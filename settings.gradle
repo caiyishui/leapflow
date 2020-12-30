@@ -1,0 +1,9 @@
+include ':libmodule'
+include ':libannotations'
+project(':libannotations').projectDir = new File("./lib/libannotations")
+include ':libcompiler'
+project(':libcompiler').projectDir = new File("./lib/libcompiler")
+include ':libleapflow'
+project(':libleapflow').projectDir = new File("./lib/libleapflow")
+include ':app'
+rootProject.name = "LeapFlow"
