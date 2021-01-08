@@ -24,8 +24,8 @@ object LeapFlow{
             generate.build().filter {
                 mProcess.isMain() || !it.runOnlyInMainProcess
             }.forEach {
-                println("start task111 ${it.javaClass}")
-
+                println("start task: ${it.javaClass}")
+                it.context = process.context()
                 when{
                     it.aloneRun->
                         Dispatcher.withNewWorker().dispatch(it)

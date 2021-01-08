@@ -1,5 +1,7 @@
 package com.wedoctor.leapflow.task
 
+import android.app.Application
+import android.content.Context
 import java.util.concurrent.ExecutorService
 
 
@@ -13,6 +15,8 @@ abstract class DefaultTask : ITask{
     override var runOnlyInMainProcess: Boolean =  false
 
     override var aloneRun: Boolean = false
+
+    override var context: Application? = null
 
 
     override fun priority(): Int {

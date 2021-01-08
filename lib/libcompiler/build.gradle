@@ -12,5 +12,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "com.google.code.gson:gson:2.8.5"
     implementation 'com.squareup:javapoet:1.4.0'
-    implementation project(':libannotations')
+    implementation 'com.wedoctor.android:leapflow-annotation:1.0.0-SNAPSHOT'
 }

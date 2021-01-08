@@ -16,7 +16,12 @@ class MainWorker() : DefaultWorker() {
     private var job: Job? = null
 
     override fun work(task: ITask) {
-        task.action()
+        kotlin.runCatching {
+            task.action()
+        }.onFailure {
+            it.printStackTrace()
+        }
+
         task.asyncNext.filter {
             println(it.javaClass)
             LeapFlow.mProcess.isMain() || !it.runOnlyInMainProcess
