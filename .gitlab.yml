@@ -7,4 +7,4 @@ PublishJob:
   only:
     - /^.*/release$/
   script:
-    - android_pipeline.sh publish -p=libleapflow -pd=/lib/libleapflow -g=com.wedoctor.android -a=leapflow -v=${MAJOR_VERSION}.${CI_PIPELINE_ID}-${CI_COMMIT_SHORT_SHA}-SNAPSHOT
+    - android_pipeline.sh publish -p=libcompiler -pd=/lib/libcompiler -g=com.wedoctor.android -a=leapflow-compiler -v=${MAJOR_VERSION}.${CI_PIPELINE_ID}-${CI_COMMIT_SHORT_SHA}-SNAPSHOT
