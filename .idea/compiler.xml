@@ -6,6 +6,8 @@
       <module name="GitHub.LeapFlow.libleapflow" target="1.8" />
       <module name="LeapFlow.app" target="1.8" />
       <module name="LeapFlow.libcompiler" target="1.8" />
+      <module name="LeapFlow.libcompiler.main" target="1.8" />
+      <module name="LeapFlow.libcompiler.test" target="1.8" />
       <module name="LeapFlow.libleapflow" target="1.8" />
       <module name="LeapFlow.libmodule" target="1.8" />
     </bytecodeTargetLevel>

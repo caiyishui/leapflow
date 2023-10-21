@@ -7,7 +7,7 @@ buildscript {
     }
     dependencies {
 
-        classpath "com.android.tools.build:gradle:3.3.2"
+        classpath 'com.android.tools.build:gradle:4.1.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -18,8 +18,12 @@ buildscript {
 allprojects {
     repositories {
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+//        maven{
+//            url 'http://nexus.guahao-inc.com/nexus/content/repositories/snapshots/'
+//        }
+
         maven{
-            url 'http://nexus.guahao-inc.com/nexus/content/repositories/snapshots/'
+            url "https://raw.githubusercontent.com/caiyishui/maven-repository/release"
         }
         google()
         jcenter()
